@@ -4,21 +4,15 @@
  * and open the template in the editor.
  */
 package Leche;
+import Postres.Postre;
 
 /**
  *
  * @author Pedro Mendoza
  */
-public class LecheDescremada extends LecheEntera {
-    
+public class LecheDescremada extends LecheEntera {    
     @Override
-    public void usarHelado() {
+    public void usar(Postre postre) {
         System.out.println("Usando leche descremada");
-    }
-
-    @Override
-    public void usarPastel() {
-        System.out.println("Usando leche descremada");
-    }
-    
+    }    
 }

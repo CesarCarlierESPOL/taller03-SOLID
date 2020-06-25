@@ -19,7 +19,7 @@ public class Sistema {
         // a ambos agregarles CREMA y FRUTILLAS
         // y cambiar el tipo de leche por Leche Descremada
         // Finalmente mostrar el precio final de cada uno
-        LecheEntera leche = new LecheDeslactosada();
+        LecheEntera leche = new LecheDescremada();
         ManejadorDeLeche mnj_leche = new ManejadorDeLeche();
         
         // Producir Helado
@@ -27,7 +27,7 @@ public class Sistema {
         helado_vainilla.anadirAderezo(new Crema());
         helado_vainilla.anadirAderezo(new Frutilla());
         System.out.println(helado_vainilla);
-//        mnj_leche.cambiarTipoLeche(leche, helado_vainilla);
+        mnj_leche.cambiarTipoLeche(leche, helado_vainilla);
         System.out.println(helado_vainilla.showPrecioFinal());
         
         // Producir Pastel
@@ -35,7 +35,7 @@ public class Sistema {
         pastel_chocolate.quitarAderezo(new Crema());
         pastel_chocolate.anadirAderezo(new Frutilla());
         System.out.println(pastel_chocolate);
-//        mnj_leche.cambiarTipoLeche(leche, pastel_chocolate);
+        mnj_leche.cambiarTipoLeche(leche, pastel_chocolate);
         System.out.println(pastel_chocolate.showPrecioFinal());
         
         
